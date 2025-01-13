@@ -1,7 +1,8 @@
 const tariff = 0.21;
 const distance = document.getElementById("distance")
-const ge = document.getElementById("age")
+const age = document.getElementById("age")
 const form = document.querySelector("form")
+const output = document.getElementById("output")
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -26,5 +27,7 @@ form.addEventListener("submit", (event) => {
     price = (tot - (tot * discount)).toFixed(2);
 
     console.log(price + "€");
-    
+
+    //add
+    output.innerText = price + "€"
 });
