@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <div class="container">
-        <div>
+        <div class="first">
+            <h2>Calcolo prezzo del biglietto</h2>
             <form action="">
-                <input id="distance" type="text" placeholder="Inserisci i chilometri da percorrere">
-                <select name="scelta" id="age">
-                    <option value="0">Minorenne</option>
-                    <option value="18">Maggiorenne</option>
-                    <option value="65">Over 65</option>
-                </select>
+                <div>
+                    <div><strong>Nome</strong></div>
+                    <input id="name" type="text" placeholder="Inserisci il tuo nome">   
+                </div>
+
+                <div>
+                    <div><strong>km da percorrere</strong></div>
+                    <input id="distance" type="text" placeholder="Inserisci i chilometri da percorrere"> 
+                </div>
+                
+                <div>
+                    <div><strong>Età</strong></div>
+                    <select name="scelta" id="age">
+                        <option value="0">Minorenne</option>
+                        <option value="18">Maggiorenne</option>
+                        <option value="65">Over 65</option>
+                    </select> 
+                </div>
                 <input id="submit" type="submit">
             </form>
         </div>
-        <div>
-            <span id="output"></span>
+        <div class="second">
+            <h2>Biglietto</h2>
+            <div>
+                <div class="bg-gray">
+                    <div><strong>Nome</strong></div>
+                    <div id="nameOutput"></div>
+                </div>
+                <div>
+                    <div><strong>Prezzo</strong></div>
+                    <div id="output"></div>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <script src="./js/script.js"></script>
 </body>
+
 </html>

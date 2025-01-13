@@ -4,6 +4,10 @@ const age = document.getElementById("age")
 const form = document.querySelector("form")
 const output = document.getElementById("output")
 
+const name = document.getElementById("name")
+const nameOutput = document.getElementById("nameOutput")
+
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -30,4 +34,8 @@ form.addEventListener("submit", (event) => {
 
     //add
     output.innerText = price + "€"
+
+    nameOutput.innerText = name.value
+
+    
 });

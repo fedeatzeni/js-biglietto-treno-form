@@ -1,5 +1,53 @@
+body {
+    background-color: #b81450;
+    font-size: 20px;
+}
 
+.container {
+    width: 70%;
+    margin: 20px auto;
+
+}
+
+.first {
+    background-color: white;
+    padding: 10px 20px 30px 10px;
+    border-radius: 10px;
+}
+
+.second {
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px 20px 30px 10px;
+}
+
+.second>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second>div div {
+margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input,
+select {
+    margin-top: 10px;
+}
 
 #distance {
+    width: 200px;
+}
+
+#name {
     width: 200px;
 }
